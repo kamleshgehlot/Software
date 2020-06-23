@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Home from './Component/index.js'
+import About from './Component/About.js'
+import Contact from './Component/Contact.js'
+import Footer from './Component/Subcomponent/footer.js'
+import Header from './Component/Subcomponent/Header.js'
+import Whyus from './Component/Whyus.js'
+import OurWorks from './Component/Ourworks.js'
+import OurExpertise from './Component/OurExpertise.js'
+import OurGolas from './Component/OurGoals.js'
+import Portfolios from './Component/Portfolios.js'
+import Services from './Component/Services.js'
+
+
+      function App() {
+        return (
+          <div>
+                <Router>
+                  
+                <Header/>
+                <Whyus/>
+                <About/>
+                {/* <OurWorks/> */}
+                <Services/>
+                <OurExpertise/>
+                <OurGolas/>
+                <Portfolios/>
+                <Contact/>
+                <Footer/> 
+                
+                </Router>  
+     
+          </div>
+        );
+      }
 
 export default App;
