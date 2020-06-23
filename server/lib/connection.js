@@ -6,7 +6,7 @@ if (env === 'prod') {
    dbOptions = {
       host: 'localhost',
       user: 'root',
-      password:'6mNMX9Ln0oykXKic',
+      password:'IMT0IsS2XNqdU0ZC',
       port: 3306
    };
 } else {
