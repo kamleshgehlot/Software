@@ -1,6 +1,6 @@
 const path = require('path');
 const mainRoute = require('express').Router();
-const { env } = require("../lib/databaseMySQL");
+
 
 
 mainRoute.get('*', (req, res) => {
